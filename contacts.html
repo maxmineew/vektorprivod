@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — ВекторПривод</title>
+  <meta name="description" content="Контакты ООО «ВекторПривод»: телефон, email, адрес в Москве и форма обратной связи для заявки на промышленный привод.">
+  <link rel="canonical" href="contacts.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">ВП</span>
+        <span class="logo-text">ВекторПривод<span>промышленный привод</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Меню" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="about.html">О компании</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="china.html">Поставки из Китая</a>
+        <a class="is-active" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-contacts">
+        <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+        <a href="mailto:info@vektorprivod.example">info@vektorprivod.example</a>
+      </div>
+      <div class="header-actions">
+        <button class="btn btn-ghost" type="button" data-open-modal="call">Заказать звонок</button>
+        <button class="btn btn-primary" type="button" data-open-modal="quick">Заявка в 1 клик</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Главная</a> / Контакты</p>
+        <h1>Контакты</h1>
+        <p>Напишите задачу — инженер вернётся с сроками и предложением по комплектации.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contacts-layout">
+        <aside class="contact-card">
+          <h2 style="font-size:1.6rem;margin-bottom:1rem">ООО «ВекторПривод»</h2>
+          <dl>
+            <div>
+              <dt>Адрес</dt>
+              <dd>115230, г. Москва, пр-т Мира, д. 105, офис 412</dd>
+            </div>
+            <div>
+              <dt>Телефон</dt>
+              <dd><a href="tel:+74951234567">+7 (495) 123-45-67</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:info@vektorprivod.example">info@vektorprivod.example</a></dd>
+            </div>
+            <div>
+              <dt>Режим</dt>
+              <dd>Пн–Пт, 9:00–18:00 (МСК)</dd>
+            </div>
+            <div>
+              <dt>Реквизиты (демо)</dt>
+              <dd>ИНН 7701234567 · КПП 770101001 · ОГРН 1234567890123</dd>
+            </div>
+          </dl>
+          <div class="map-placeholder" role="img" aria-label="Карта — демо-заглушка">Карта (Яндекс / 2GIS) — подключается на проде</div>
+        </aside>
+
+        <div class="contact-card">
+          <h2 style="font-size:1.6rem;margin-bottom:1rem">Форма обратной связи</h2>
+          <form class="form" id="contact-form">
+            <label>Имя<input name="name" required autocomplete="name" placeholder="Имя и компания"></label>
+            <label>Телефон<input name="phone" type="tel" required autocomplete="tel" placeholder="+7 (___) ___-__-__"></label>
+            <label>Email<input name="email" type="email" required autocomplete="email" placeholder="name@company.ru"></label>
+            <label>Сообщение<textarea name="message" required placeholder="Что нужно поставить / сроки / объект"></textarea></label>
+            <p class="form-note">Демо: заявка не уходит на сервер. На боевом сайте — email + Telegram + reCAPTCHA v3.</p>
+            <div class="form-success" id="contact-success">Спасибо! Сообщение принято (демо).</div>
+            <button class="btn btn-primary btn-lg" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>ВекторПривод</h3>
+        <p>Промышленные редукторы, электродвигатели и приводная комплектация для B2B.</p>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="china.html">Поставки из Китая</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <ul>
+          <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+          <li><a href="mailto:info@vektorprivod.example">info@vektorprivod.example</a></li>
+          <li>Москва, пр-т Мира, 105</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> ООО «ВекторПривод». Демо для портфолио.</span>
+      <span class="portfolio-badge">Портфолио-кейс: сайт-визитка B2B</span>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-head">
+        <h3 id="modal-title">Заказать звонок</h3>
+        <button class="modal-close" id="modal-close" type="button" aria-label="Закрыть">×</button>
+      </div>
+      <form class="form" id="modal-form">
+        <label>Имя<input id="modal-name" name="name" required autocomplete="name"></label>
+        <label>Телефон<input name="phone" type="tel" required autocomplete="tel"></label>
+        <label id="modal-comment-wrap" hidden>Что нужно<textarea name="comment"></textarea></label>
+        <p class="form-note">Демо-форма: данные никуда не отправляются.</p>
+        <div class="form-success" id="modal-success">Заявка принята (демо).</div>
+        <button class="btn btn-primary" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,5 +1,8 @@
 # ВекторПривод — портфолио-демо сайта-визитки B2B
 
+**Live:** https://maxmineew.github.io/vektorprivod/  
+**Repo:** https://github.com/maxmineew/vektorprivod
+
 Статический аналог ТЗ с Fl.ru (сайт-визитка для промышленности), **без привязки к металлопрокату и без Signea**.
 
 ## Вымышленный бренд
